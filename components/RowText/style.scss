@@ -1,0 +1,12 @@
+.elf-text {
+  &.el-text--one-line {
+    @include textEllipsis(1);
+  }
+  &.el-text--much-line {
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
